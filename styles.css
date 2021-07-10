@@ -1,0 +1,97 @@
+/* Page styling */
+h1 {
+  font-family: "Lucida Console";
+  color: rgb(255, 78, 47);
+  background-color: rgb(126, 54, 35);
+  padding-left: 0.5em;
+}
+
+body {
+  background-color: rgb(83, 40, 0);
+}
+
+/* Input hint */
+.form-hint {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.form-hint p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+  font-family: "Courier New";
+  color: rgb(121, 80, 20);
+  font-weight: bold;
+  background-color: rgb(235, 200, 106);
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  padding-bottom: 0.1em;
+  margin-top: 0.6em;
+}
+/* User input field*/
+input {
+  text-align: center;
+  border-radius: 0;
+  border-style: solid;
+  border-color: rgb(245, 116, 66);
+  padding-top: 0.3em;
+  padding-bottom: 0.2em;
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(247, 233, 222);
+}
+input:focus {
+  outline: none;
+}
+/* Submit button */
+.submit-button {
+  padding: 0.5em 3em;
+  background-color: rgb(75, 219, 87);
+  border: none;
+  border-radius: 0.4em;
+  color: rgb(20, 97, 26);
+  font-family: "Lucida Console";
+  font-size: 1.2em;
+}
+.submit-button:hover {
+  transition: all 0.2s ease-in;
+  background-color: rgb(126, 233, 137);
+}
+.submit-button:focus {
+  transition: all 0.1s ease-in;
+  background-color: rgb(158, 247, 167);
+}
+.submit-div {
+  margin-top: 5em;
+  text-align: center;
+}
+/* Wrapper for input field */
+.form {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+/* Form field validation styles */
+input.valid {
+  border-color: rgb(64, 185, 80);
+  border-width: 0.2em;
+}
+input.invalid {
+  border-color: rgb(245, 116, 66);
+}
+
+/*
+
+how 2 apply style whenever valid? probably inserting class with js but regex time not js time
+.form input.valid + .form-hint p {
+  color: rgb(108, 245, 66);
+}
+input.invalid + .form-hint p {
+  color: rgb(245, 116, 66);
+}
+*/
